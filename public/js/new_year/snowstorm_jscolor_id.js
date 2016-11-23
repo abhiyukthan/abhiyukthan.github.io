@@ -1,0 +1,1 @@
+var myPicker = new jscolor.color(document.getElementById('snowstorm_snowColor'), {})

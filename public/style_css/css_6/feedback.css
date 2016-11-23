@@ -1,0 +1,14 @@
+#feedbackStats
+li{line-height:1.75em}#feedbackStats li
+.value{line-height:1.2em !important}#feedbackStats li, .fbkProfStat, #topMembers li
+.value{vertical-align:middle}.fbkProfStat{text-align:center;margin-bottom:9px}.fbkProfStat .value, #feedbackStats .value, #topMembers .value, .user_controls
+.value{background:none repeat scroll 0 0 #A0A0A0;color:#FFF;display:inline-block;font-weight:bold;margin-right:3px;padding:2px
+6px}.feedbackBadge_lightgrey{background:none repeat scroll 0 0 #A0A0A0}.fbkProfStat .value.positive, #feedbackStats .value.positive, #topMembers .value.positive, .feedbackBadge_green, .user_controls
+.value.positive{background:none repeat scroll 0 0 #6FB758}.feedbackBadge_green,.feedbackBadge_lightgrey,.feedbackBadge_red{font-size:12px !important;height:auto !important;padding:2px
+6px !important;min-width:14px}.fbkProfStat .value.negative, #feedbackStats .negative, .feedbackBadge_red, .user_controls
+.value.negative{background:none repeat scroll 0 0 #E6574B}.fbkProfStat.uP
+li{margin-top:6px}.fbkProfStat.uP{margin-top:3px}#advertiser_overview .fbkProfStat
+a{display:inline !important;background:none !important}#advertiser_overview .fbkProfStat
+li{text-align:center !important;margin-top:6px !important}.user_controls
+a.feedback{background:none;border:0px;padding:0px;box-shadow:none;margin-left:5px}.user_controls a.feedback
+.value{padding:6px;min-height:16px;min-width:16px;text-align:center;line-height:17px}
