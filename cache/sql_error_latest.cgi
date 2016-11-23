@@ -1,30 +1,19 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Wed, 23 Nov 2016 22:48:10 +0000
- Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
- IP Address: 69.162.124.230 - /
+ Date: Wed, 23 Nov 2016 22:50:56 +0000
+ Error: 3 - Error writing file '/tmp/MYUgm3Y6' (Errcode: 28 - No space left on device)
+ IP Address: 207.46.13.112 - /index.php/topic/49148-wwecom-x1/
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
-					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
-					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
-				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
- ORDER BY times DESC
-LIMIT 0, 50
+ mySQL query error: SELECT tg.* ,t.*, t.approved, t.title as topic_title, t.posts as topic_posts, t.last_post as topic_last_post,m.*,p.*,xxx.* FROM core_tags tg  LEFT JOIN topics t ON (t.tid=tg.tag_meta_id) LEFT JOIN members m ON (last_poster_id=m.member_id) LEFT JOIN profile_portal p ON (p.pp_member_id=m.member_id) LEFT JOIN core_tags_cache xxx ON (xxx.tag_cache_key=MD5(CONCAT('forums',';','topics',';',t.tid))) WHERE tg.tag_meta_app='forums' AND tg.tag_meta_area='topics' AND tg.tag_meta_id !=49148 AND tg.tag_text IN ('STREAMING','wwe.com') AND tg.tag_aai_lookup IN (SELECT tag_perm_aai_lookup FROM  core_tags_perms WHERE ( ( FIND_IN_SET(2,tag_perm_text) ) OR ( tag_perm_text='*' ) ) AND tag_perm_visible=1 ) ORDER BY tg.tag_meta_id desc LIMIT 0,100
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
+ | tslogin/sources/classes/tags/abstract.php                                  | [classes_tags_search_sql].run                                                 | 868               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
+ | tslogin/applications/forums/extensions/tags/topics.php                     | [classes_tag_abstract].search                                                 | 265               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [tags_forums_topics].search                                                   | 1263              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getSameTaggedData                              | 303               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
