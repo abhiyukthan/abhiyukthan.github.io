@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 07:27:58 +0000
+ Date: Thu, 24 Nov 2016 07:28:45 +0000
  Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
- IP Address: 157.55.39.57 - /index.php/tags/forums/legit/
+ IP Address: 66.249.65.55 - /index.php/tags/forums/uptobox.com/?st=75
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  mySQL query error: SELECT t.*,p.*,m.member_id, m.members_display_name, m.members_seo_name,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig,xxx.* FROM topics t  LEFT JOIN posts p ON ( p.pid=t.topic_firstpost ) 
  LEFT JOIN members m ON ( m.member_id=p.author_id ) 
  LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
  LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=p.author_id ) 
- LEFT JOIN core_tags_cache xxx ON ( xxx.tag_cache_key=MD5(CONCAT('forums',';','topics',';',t.tid)) )   WHERE t.tid IN( 96354)
+ LEFT JOIN core_tags_cache xxx ON ( xxx.tag_cache_key=MD5(CONCAT('forums',';','topics',';',t.tid)) )   WHERE t.tid IN( 8661,8659,8662,8660,8658,8655,8653,3770,3773,3769,3768)
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
