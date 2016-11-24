@@ -9173,3 +9173,429 @@ LIMIT 0, 50
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
  | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:10 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 162.248.246.40 - /index.php/topic/122868-socks-5/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=122868 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:13 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 217.73.208.154 - /index.php/topic/809-fileomcom-premium-till-29-dec-2014/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=809 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:24 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.11 - /index.php/topic/122987-brazzerscom/?view=getnewpost
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=122987 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:24 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.11 - /index.php/topic/53808-uploadednet-premium-3-week-1-day-5-hours-left/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=53808 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:24 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.11 - /index.php/topic/131678-hi-all/?view=getlastpost
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=131678 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:28 +0000
+ Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ IP Address: 66.249.65.55 - /index.php?s=google=d2274d74f22428b923dc1889c15fd89b_session&
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
+					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
+					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
+				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
+ ORDER BY times DESC
+LIMIT 0, 50
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:33 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 207.46.13.112 - /index.php/topic/134236-putalocuracom/?view=getnewpost
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=134236 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:35 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.57 - /index.php/topic/139345-1x-hulu-premium/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=139345 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:35 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.57 - /index.php/topic/46117-1x-bangbros-1-bangbros-2-dancing-bear-3-culioneros-4-haze-her-5-college-rules-6-mygf-7-cfnm-show-8-brandi-belle-9-public-inv/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=46117 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:37 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.57 - /index.php/topic/100247-ufctv-subscriptions-fight-pass-monthly-subscription/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=100247 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:41 +0000
+ Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ IP Address: 69.162.124.230 - /
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
+					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
+					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
+				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
+ ORDER BY times DESC
+LIMIT 0, 50
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:43 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.19 - /index.php/topic/132898-hello-crackers/?view=getnewpost
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=132898 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:43 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.19 - /index.php/topic/64250-tickleasiancom/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=64250 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:45 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.19 - /index.php/topic/104627-storesteampoweredcom-1x-premium-account-games-8/
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=104627 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:45 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.19 - /index.php/topic/136365-pubacom-x2-premium-member/?view=getnewpost
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=136365 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:20:55 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 157.55.39.11 - /index.php/topic/5869-ezleecher-v325-full-cracked/page-3
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=5869 AND  queued=0  ORDER BY pid asc LIMIT 40,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Thu, 24 Nov 2016 00:21:00 +0000
+ Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ IP Address: 85.93.93.133 - /
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
+					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
+					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
+				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
+ ORDER BY times DESC
+LIMIT 0, 50
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
