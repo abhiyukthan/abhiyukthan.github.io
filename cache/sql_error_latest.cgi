@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 08:32:02 +0000
+ Date: Thu, 24 Nov 2016 08:33:01 +0000
  Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
- IP Address: 87.67.62.160 - /topic/60768-%E2%98%85-%E2%98%86-%E2%98%85-priv8-dorks-sql-injection-daily-fresh-%E2%98%85-%E2%98%86-%E2%98%85/page-13
+ IP Address: 157.55.39.11 - /index.php/topic/121797-hey-guys/?view=getnewpost
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=60768 AND  queued=0  ORDER BY pid asc LIMIT 240,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=121797 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
  LEFT JOIN members m ON ( m.member_id=p.author_id ) 
  LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
  LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
