@@ -1,21 +1,30 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 01:10:02 +0000
- Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
- IP Address: 93.136.78.188 - /index.php?app=core&module=search&section=search&do=search&fromsearch=1
+ Date: Thu, 24 Nov 2016 01:11:00 +0000
+ Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ IP Address: 85.93.93.133 - /
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT p.*,t.*,m.member_id, m.members_display_name, m.members_seo_name,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig,xxx.* FROM posts p  LEFT JOIN topics t ON ( t.tid=p.topic_id ) 
- LEFT JOIN members m ON ( m.member_id=p.author_id ) 
- LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
- LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=p.author_id ) 
- LEFT JOIN core_tags_cache xxx ON ( xxx.tag_cache_key=MD5(CONCAT('forums',';','topics',';',t.tid)) )   WHERE p.pid IN( 714781,714596,713319,329045,459046,489514,458013,651750,597988,578968,548998,541409,540652,525786,520785,510051,501105,498763,491983,490963,482790,482789,482788,482787,482786)
+ mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
+					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
+					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
+				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
+ ORDER BY times DESC
+LIMIT 0, 50
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/sources/classes/search/controller.php                              | [search_format_forums].processResults                                         | 553               |
+ | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/applications/core/modules_public/search/search.php                 | [IPSSearch].search                                                            | 671               |
+ | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/applications/core/modules_public/search/search.php                 | [public_core_search_search].searchResults                                     | 173               |
+ | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsController.php                                     | [public_core_search_search].doExecute                                         | 306               |
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
