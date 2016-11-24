@@ -1,15 +1,21 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 23:21:02 +0000
- Error: 1146 - Table 'crackingportal.cache_store' doesn't exist
- IP Address: 141.8.143.227 - /index.php/topic/147367-zeveracom-lifetime-expire-never/
+ Date: Thu, 24 Nov 2016 23:22:01 +0000
+ Error: 1146 - Table 'crackingportal.sessions' doesn't exist
+ IP Address: 207.46.13.67 - /index.php/topic/122876-hi/?view=getnewpost
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT * FROM cache_store WHERE cs_key IN ( 'systemvars','login_methods','vnums','app_cache','navigation_tabs','module_cache','hooks','useragents','useragentgroups','skinsets','outputformats','skin_remap','group_cache','settings','lang_data','banfilters','stats','badwords','bbcode','mediatag','profilefields','rss_output_cache','rss_export','meta_tags','ipseo_acronyms','attachtypes','multimod','moderators','announcements','report_cache','report_plugins','emoticons','ranks','reputation_levels','sharelinks','donate_cache','topic_prefixes','fi_icons','notifications','feedbackTopMembers' )
+ mySQL query error: DELETE FROM sessions WHERE ip_address='207.46.13.67' OR id='bingbot=10bab2d122da31ce111c69e1bfb5104c_session'
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_CacheRegistry]._loadCaches                                               | 3049              |
+ | tslogin/sources/classes/session/publicSessions.php                         | [db_main_mysql].delete                                                        | 1311              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_CacheRegistry].init                                                      | 2843              |
+ | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._destroySessions                                             | 1133              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_CacheRegistry].instance                                                  | 580               |
+ | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._createGuestSession                                          | 505               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsRegistry.php                                       | [publicSessions].__construct                                                  | 3904              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].init                                                     | 3737              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].instance                                                 | 621               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
