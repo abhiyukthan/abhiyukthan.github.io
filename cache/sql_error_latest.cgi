@@ -1,30 +1,17 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 00:33:01 +0000
- Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
- IP Address: 46.165.208.231 - /
+ Date: Thu, 24 Nov 2016 00:34:03 +0000
+ Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
+ IP Address: 46.165.208.231 - /index.php?s=ad6f98eb62cc20f23e1b592a43fb3aab&app=members&section=load&module=ajax&member_id=11288&tab=forums:posts&md5check=26790925a1ed41768797bfb58be46871
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
-					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
-					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
-				 ( ( FIND_IN_SET(3,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
- ORDER BY times DESC
-LIMIT 0, 50
+ mySQL query error: SELECT p.*,t.*,m.member_group_id, m.mgroup_others,cca.* FROM posts p  LEFT JOIN topics t ON ( t.tid=p.topic_id ) 
+ LEFT JOIN members m ON ( m.member_id=p.author_id ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid )   WHERE  p.queued=0  AND  t.approved=1  AND p.author_id=11288 AND p.new_topic=0 AND t.forum_id IN (4,5,6,7,8,10,11,12,91,13,14,118,113,19,20,115,23,31,32,116,45,46,117,57,58,60,63,70,72,74,75,61,62,64,65,66,67,68,69,73,168,77,78,80,81,82,83,85,87,167,88,89,90,86,93,94,95,96,120,100,97,119,98,108,110,111,112,109,114,121,122,124,125,126,142,127,128,137,131,134,135,136,138,132,133,22,24,26,27,28,16,17)  AND p.post_date > 1448323316 ORDER BY p.pid DESC LIMIT 0,5
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
+ | tslogin/applications/members/modules_public/ajax/load.php                  | [profile_posts].return_html_block                                             | 107               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
+ | tslogin/sources/base/ipsController.php                                     | [public_members_ajax_load].doExecute                                          | 421               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
+ | tslogin/sources/base/ipsController.php                                     | [ipsAjaxCommand].execute                                                      | 120               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
