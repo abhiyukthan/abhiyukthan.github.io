@@ -1,17 +1,24 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 15:04:01 +0000
+ Date: Thu, 24 Nov 2016 15:04:57 +0000
  Error: 144 - Table './crackingportal/content_cache_posts' is marked as crashed and last (automatic?) repair failed
- IP Address: 173.234.43.116 - /index.php?s=2f592dffc57c8595b888af30a13aecc3&app=members&section=load&module=ajax&member_id=49894&tab=forums:posts&md5check=2337d2c184e934bdd5f40c12ce8b9d64
+ IP Address: 157.55.39.210 - /index.php/topic/123392-hulu-premium-account-crackingportal-new-3june-4/
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: SELECT p.*,t.*,m.member_group_id, m.mgroup_others,cca.* FROM posts p  LEFT JOIN topics t ON ( t.tid=p.topic_id ) 
+ mySQL query error: SELECT p.*,m.member_id as mid,m.name,m.member_group_id,m.email,m.joined,m.posts, m.last_visit, m.last_activity,m.login_anonymous,m.title as member_title, m.warn_level, m.warn_lastwarn, m.members_display_name, m.members_seo_name, m.member_banned, m.has_gallery, m.has_blog, m.members_bitoptions,m.mgroup_others,m.feedb_percent,m.feedb_pos,m.feedb_neu,m.feedb_neg,m.donate_donations,m.donate_amount,pp.*,w.wl_id,pc.*,rep_index.rep_rating as has_given_rep,rep_cache.rep_points, rep_cache.rep_like_cache,cca.*,ccb.cache_content as cache_content_sig, ccb.cache_updated as cache_updated_sig FROM ( SELECT pid, post_date FROM posts WHERE topic_id=123392 AND  queued=0  ORDER BY pid asc LIMIT 0,20 ) z  LEFT JOIN posts p ON ( p.pid=z.pid ) 
  LEFT JOIN members m ON ( m.member_id=p.author_id ) 
- LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid )   WHERE  p.queued=0  AND  t.approved=1  AND p.author_id=49894 AND p.new_topic=0 AND t.forum_id IN (4,5,6,7,8,10,11,12,91,13,14,118,113,19,20,115,23,31,32,116,45,46,117,57,58,60,63,70,72,74,75,61,62,64,65,66,67,68,69,73,168,77,78,80,81,82,83,85,87,167,88,89,90,86,93,94,95,96,120,100,97,119,98,108,110,111,112,109,114,121,122,124,125,126,142,127,128,137,131,134,135,136,138,132,133,22,24,26,27,28,16,17)  AND p.post_date > 1448393726 ORDER BY p.pid DESC LIMIT 0,5
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id ) 
+ LEFT JOIN members_warn_logs w ON ( w.wl_content_app='forums' and w.wl_content_id1=p.pid ) 
+ LEFT JOIN pfields_content pc ON ( pc.member_id=p.author_id ) 
+ LEFT JOIN reputation_index rep_index ON ( rep_index.app='forums' AND 
+						             rep_index.type='pid' AND 
+						             rep_index.type_id=p.pid AND 
+						             rep_index.member_id=0 ) 
+ LEFT JOIN reputation_cache rep_cache ON ( rep_cache.app='forums' AND rep_cache.type='pid' AND rep_cache.type_id=p.pid ) 
+ LEFT JOIN content_cache_posts cca ON ( cca.cache_content_id=p.pid ) 
+ LEFT JOIN content_cache_sigs ccb ON ( ccb.cache_content_id=m.member_id )   ORDER BY z.pid asc
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/applications/members/modules_public/ajax/load.php                  | [profile_posts].return_html_block                                             | 107               |
+ | tslogin/applications/forums/modules_public/forums/topics.php               | [public_forums_forums_topics]._getPosts                                       | 208               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsController.php                                     | [public_members_ajax_load].doExecute                                          | 421               |
- '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsController.php                                     | [ipsAjaxCommand].execute                                                      | 120               |
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_topics].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
