@@ -1,21 +1,30 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 20:22:06 +0000
- Error: 1053 - Server shutdown in progress
- IP Address: 157.55.39.210 - /index.php/topic/123684-new-on-the-site-h/?view=getnewpost
+ Date: Thu, 24 Nov 2016 20:22:48 +0000
+ Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ IP Address: 178.34.158.172 - /
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: DELETE FROM sessions WHERE ip_address='157.55.39.210' OR id='bingbot=1ee0dac0426eb3f3f05ce82c9de49119_session'
+ mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
+					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
+					AND t.tag_aai_lookup IN( SELECT p.tag_perm_aai_lookup FROM core_tags_perms p WHERE
+				 ( ( FIND_IN_SET(2,p.tag_perm_text) ) OR ( p.tag_perm_text='*' ) ) AND p.tag_perm_visible=1 ) GROUP BY t.tag_text
+ ORDER BY times DESC
+LIMIT 0, 50
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/sources/classes/session/publicSessions.php                         | [db_main_mysql].delete                                                        | 1311              |
+ | tslogin/applications/forums/sources/classes/hooks/gateway.php              | [classes_tags_cloud].getCloudData                                             | 78                |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._destroySessions                                             | 1133              |
+ | hooks/boardIndexTags_252b2b9f7399381a7a1e2c3d373787b8.php                  | [forums_hookGateway].tags                                                     | 17                |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._createGuestSession                                          | 505               |
+ | tslogin/sources/classes/output/publicOutput.php                            | [boardIndexTags].getOutput                                                    | 3785              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [publicSessions].__construct                                                  | 3904              |
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].init                                                     | 3737              |
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].instance                                                 | 621               |
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
