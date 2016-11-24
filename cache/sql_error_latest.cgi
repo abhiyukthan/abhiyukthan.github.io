@@ -1,21 +1,22 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Thu, 24 Nov 2016 20:14:00 +0000
- Error: 1146 - Table 'crackingportal.sessions' doesn't exist
- IP Address: 157.55.39.156 - /index.php/topic/138708-mycherrycrushcom/?view=getnewpost
+ Date: Thu, 24 Nov 2016 20:14:55 +0000
+ Error: 1146 - Table 'crackingportal.topics' doesn't exist
+ IP Address: 117.201.194.167 - /
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- mySQL query error: DELETE FROM sessions WHERE ip_address='157.55.39.156' OR id='bingbot=27eda1d14398dba0bf1cf2cf315f5473_session'
+ mySQL query error: SELECT t.starter_id, count(t.tid) as total,m.member_id, m.members_display_name, m.members_seo_name, m.member_group_id,pp.* FROM topics t  LEFT JOIN members m ON ( m.member_id=t.starter_id ) 
+ LEFT JOIN profile_portal pp ON ( m.member_id=pp.pp_member_id )   WHERE t.start_date > 1479413695 AND ( m.member_banned = 0 OR m.member_group_id != 5) GROUP BY t.starter_id ORDER BY total DESC LIMIT 0,5
  .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
  | File                                                                       | Function                                                                      | Line No.          |
  |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
- | tslogin/sources/classes/session/publicSessions.php                         | [db_main_mysql].delete                                                        | 1311              |
+ | tslogin/sources/classes/output/publicOutput.php                            | [membersSidebarStats].getOutput                                               | 3785              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._destroySessions                                             | 1133              |
+ | tslogin/sources/classes/output/publicOutput.php(3849) : eval()'d code      | [output].templateHooks                                                        | 6                 |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/classes/session/publicSessions.php                         | [publicSessions]._createGuestSession                                          | 505               |
+ | tslogin/sources/classes/output/formats/html/htmlOutput.php                 | [shoutboxGlobalJs].globalTemplate                                             | 320               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [publicSessions].__construct                                                  | 3904              |
+ | tslogin/sources/classes/output/publicOutput.php                            | [htmlOutput].fetchOutput                                                      | 2970              |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].init                                                     | 3737              |
+ | tslogin/applications/forums/modules_public/forums/boards.php               | [output].sendOutput                                                           | 124               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
- | tslogin/sources/base/ipsRegistry.php                                       | [ips_MemberRegistry].instance                                                 | 621               |
+ | tslogin/sources/base/ipsController.php                                     | [public_forums_forums_boards].doExecute                                       | 306               |
  '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
