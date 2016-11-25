@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Fri, 25 Nov 2016 06:08:34 +0000
+ Date: Fri, 25 Nov 2016 06:09:34 +0000
  Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
  IP Address: 69.162.124.230 - /
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
