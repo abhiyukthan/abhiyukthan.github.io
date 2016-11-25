@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Date: Fri, 25 Nov 2016 05:40:02 +0000
+ Date: Fri, 25 Nov 2016 05:41:00 +0000
  Error: 1055 - Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'crackingportal.t.tag_meta_app' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
- IP Address: 66.249.65.57 - /index.php?s=google=7a5d3be3f1f9d0e1c377531f148148c0_session&
+ IP Address: 178.255.155.2 - /
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  mySQL query error: SELECT t.tag_text, COUNT(t.tag_text) as times, t.tag_meta_app, t.tag_meta_area
 					FROM core_tags t WHERE  tag_meta_app IN ('core','forums','members','donate','subscriptions','tb_pcr','contactus','trackmembers','duplicates','shoutbox','topictemplate','feedback')
